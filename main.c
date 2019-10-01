@@ -10,11 +10,17 @@ int main(int argc, char *argv[]) {
 	printf("input a number: ");
 	scanf("%d", &input);
 	
-	if (input > 0)-
-			printf("|x|= %d\n", input);
-	else
-		printf("|x|= %d\n", -input);
-		
-	
+	if (input > 0)
+	{
+		printf("input is positive\n");
+	}
+	else if ( input < 0)
+	{
+		printf("input is negative\n");
+	}
+	else 
+	{
+			printf("input is 0\n");
+	}
 	return 0;
 }
